@@ -3480,6 +3480,7 @@ input[type="button"].btn-block {
   display: none;
 }
 .collapse.in {
+  background-color: white;
   display: block;
 }
 tr.collapse.in {

@@ -1,37 +1,112 @@
 
+body {
+    background: rgba(245, 245, 245, 1);
+}
 
- .recherche .form-group{
+/* NAVBAR */
+
+.search{
     text-align: center;
 }
 
-legend{
+.navbar-brand{
+    padding-top:0;
+    padding-bottom: 0;
+}
+
+
+.navbar_input_search{
+    width:350px;!important;
+}
+.navbar {
+    height: 90px;
+}
+
+.navbar > div {
+    margin-top: 20px;
+}
+
+/* END NAVBAR */
+
+/* FORMULAIRE */
+.recherche {
+    margin-bottom: 100px;
+    background: rgba(245, 245, 245, 1);
+}
+
+.recherche .form-group {
     text-align: center;
 
 }
 
-.recherche button[type=submit]{
+legend {
+    text-align: center;
+
+}
+
+.recherche button[type=submit] {
     background-color: #FF6600;
 }
 
-.recherche h1{
+.recherche h1 {
     text-align: center;
     color: #FF6600;
-    margin:30px 0 30px 0;
+    margin: 30px 0 30px 0;
 }
 
- .brand-carousel {
-     padding: 60px 0;  }
- .brand-carousel .item{
-     border:1px solid #f0f0f0;
-     padding: 15px;
- }
- .brand-carousel .item img{
-     max-width: 100%;
- }
+.recherche .fa {
+    display: block;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+#contact_form2, #contact_form3 {
+    margin-top: 50px;
+}
+/* END FORMULAIRE */
 
- .recherche .fa{
-     display: block;
-     text-align: center;
- }
+/* CAROUSEL BRANDS */
+.brand-carousel {
+    background-color: white;
+}
+
+.brand-carousel .item {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 15px;
+}
+
+.brand-carousel .item img {
+    max-width: 100%;
+}
+
+.brand-carousel h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FF6600;
+}
+
+/* END BRANDS CAROUSEL */
+
+
+/* CATEGORIES */
+#categories h1 {
+    text-align: center;
+    color: #FF6600;
+    margin-bottom: 50px;
+}
+
+.categories {
+    text-align: center;
+}
+
+/* END CATEGORIES */
+
+
+
+
+
+
+
+
 
 
