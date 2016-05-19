@@ -115,6 +115,7 @@ legend {
 .well{
     border-radius: 0;
     background-color: white;
+    padding: 40px;
 }
 
 .recherche .fa {
@@ -123,7 +124,12 @@ legend {
     margin: 10px 0 10px 0;
 }
 #contact_form2, #contact_form3 {
-    margin-top: 50px;
+    height: 472px;
+}
+
+
+.voiture div:last-of-type {
+    padding-left: 0;
 }
 /* END FORMULAIRE */
 
