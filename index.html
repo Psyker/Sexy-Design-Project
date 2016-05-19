@@ -14,7 +14,7 @@
 </head>
 <body>
 <section id="header">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar nav navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -32,14 +32,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li ><a href="#">Nos magasins <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Nos catégories</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Se connecter</a></li>
+                    <li><a href="#">Nos magasins <span class="sr-only">(current)</span></a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Vos commandes <span class=" fa fa-caret-down"></span></a>
+                           aria-expanded="false">Catégories <span class=" fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
@@ -49,52 +45,161 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="navbar-form search"  role="search">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Se connecter</a></li>
+                    <li><a href="#">Vos commandes</a></li>
+                </ul>
+                <form class="navbar-form search" role="search">
                     <div class="form-group">
                         <input type="text" class="form-control navbar_input_search" placeholder="Search">
                     </div>
                     <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                 </form>
-                <img src="image/shopping-basket-in-a-circle.png">
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
 </section>
+<section id="home">
+
+    <div class="container">
+        <div class="row text-center testeuh">
+            <img class="logo" src="image/Logo_yakarouler.png" alt="">
+            <h1 class="color">Les meilleurs prix, services compris</h1>
+            <h2>1007 centres de montages</h2>
+            <div class="row btn-group-lg">
+                <button class="btn orange">Trouver la pièce idéale</button>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="recherche">
     <div class="container">
-        <h1>Trouver les pièces qu'il vous faut !</h1>
-        <!-- /.container -->
-        <div class="container col-md-4 col-sm-12 col-lg-4 search-form">
-            <form class="well form-horizontal" action=" " method="post" id="contact_form2">
-
-                <fieldset>
-                    <div class="fa fa-tag fa-3x"></div>
-                    <legend>Recherche par immatriculation</legend>
-
-                    <div class="form-group">
-                        <label class="col-md-12 control-label">Numéro d'immatriculation</label>
-                        <div class="col-md-12 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
-                                <input name="first_name" placeholder="173-PD-34" class="form-control" type="text">
+        <h1>Toutes les pièces pour voiture en 3 clics !</h1>
+        <div class="row categories text-center">
+            <ul>
+                <li class="categ-car">Voiture</li>
+                <li class="categ-moto">Motos</li>
+            </ul>
+        </div>
+        <div class="voiture">
+            <!-- /.container -->
+            <div class="container col-md-4 col-sm-12 col-lg-4 search-form">
+                <form class="well form-horizontal" action=" " method="post" id="contact_form2">
+                    <fieldset>
+                        <div class="fa fa-tag fa-5x"></div>
+                        <legend>Recherche par immatriculation</legend>
+                        <div class="form-group">
+                            <label class="col-md-12 control-label">Numéro d'immatriculation</label>
+                            <div class="col-md-12 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
+                                    <input name="first_name" placeholder="173-PD-34" class="form-control" type="text">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-4 control-label"></label>
-                        <div class="col-md-4">
-                            <button type="submit" class="btn btn-warning">Rechercher <span
-                                    class="glyphicon glyphicon-search"></span></button>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label"></label>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-warning">Rechercher <span
+                                        class="glyphicon glyphicon-search"></span></button>
+                            </div>
                         </div>
-                    </div>
-
-                </fieldset>
-            </form>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="container col-md-4 col-sm-12 col-lg-4">
+                <form class="well form-horizontal" id="contact_form">
+                    <fieldset>
+                        <div class="fa fa-car fa-3x" aria-hidden="true"></div>
+                        <legend>Recherche par modèle</legend>
+                        <div class="form-group">
+                            <label class="col-md-12 control-label">Modèle</label>
+                            <div class="col-md-12 selectContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                                    <select name="state" class="form-control selectpicker">
+                                        <option value=" ">Choisissez votre modèle</option>
+                                        <option>Alabama</option>
+                                        <option>Alaska</option>
+                                        <option>Arizona</option>
+                                        <option>Arkansas</option>
+                                        <option>California</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12 control-label">Marque</label>
+                            <div class="col-md-12 selectContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                                    <select name="state" class="form-control selectpicker">
+                                        <option value=" ">Choisissez votre marque</option>
+                                        <option>Alabama</option>
+                                        <option>Alaska</option>
+                                        <option>Arizona</option>
+                                        <option>Arkansas</option>
+                                        <option>California</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12 control-label">Motorisation</label>
+                            <div class="col-md-12 selectContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                                    <select name="state" class="form-control selectpicker">
+                                        <option value=" ">Choisissez votre motorisation</option>
+                                        <option>Alabama</option>
+                                        <option>Alaska</option>
+                                        <option>Arizona</option>
+                                        <option>Arkansas</option>
+                                        <option>California</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label"></label>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-warning">Rechercher <span
+                                        class="glyphicon glyphicon-search"></span></button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="container col-md-4 col-sm-12 col-lg-4">
+                <form class="well form-horizontal" action=" " method="post" id="contact_form3">
+                    <fieldset>
+                        <div class=" fa fa-credit-card-alt fa-5x"></div>
+                        <legend class="">Par carte grise</legend>
+                        <div class="form-group">
+                            <label class="col-md-12 control-label">Numéro de carte grise</label>
+                            <div class="col-md-12 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i
+                                            class="glyphicon glyphicon-credit-card"></i></span>
+                                    <input name="first_name" placeholder="093495757" class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label"></label>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-warning">Rechercher <span
+                                        class="glyphicon glyphicon-search"></span></button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </div>
-        <div class="container col-md-4 col-sm-12 col-lg-4">
-            <form class="well form-horizontal" id="contact_form">
+        <div class="container  col-md-12 col-sm-12 col-lg-12 none moto">
+            <form class="well form-horizontal" id="contact_form4">
                 <fieldset>
-                    <div class="fa fa-car fa-3x" aria-hidden="true"></div>
+                    <div class="fa fa-motorcycle fa-3x" aria-hidden="true"></div>
                     <legend>Recherche par modèle</legend>
                     <div class="form-group">
                         <label class="col-md-12 control-label">Modèle</label>
@@ -129,12 +234,28 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-12 control-label">Motorisation</label>
+                        <label class="col-md-12 control-label">Cylindré</label>
                         <div class="col-md-12 selectContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                                 <select name="state" class="form-control selectpicker">
-                                    <option value=" ">Choisissez votre motorisation</option>
+                                    <option value=" ">Choisissez votre cylindré</option>
+                                    <option>Alabama</option>
+                                    <option>Alaska</option>
+                                    <option>Arizona</option>
+                                    <option>Arkansas</option>
+                                    <option>California</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-12 control-label">Année</label>
+                        <div class="col-md-12 selectContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                                <select name="state" class="form-control selectpicker">
+                                    <option value=" ">Choisissez votre année</option>
                                     <option>Alabama</option>
                                     <option>Alaska</option>
                                     <option>Arizona</option>
@@ -154,87 +275,155 @@
                 </fieldset>
             </form>
         </div><!-- /.container -->
-        <div class="container col-md-4 col-sm-12 col-lg-4">
-            <form class="well form-horizontal" action=" " method="post" id="contact_form3">
-                <fieldset>
-                    <div class=" fa fa-credit-card-alt fa-3x"></div>
-                    <legend class="">Par carte grise</legend>
-                    <div class="form-group">
-                        <label class="col-md-12 control-label">Numéro de carte grise</label>
-                        <div class="col-md-12 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
-                                <input name="first_name" placeholder="093495757" class="form-control" type="text">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-4 control-label"></label>
-                        <div class="col-md-4">
-                            <button type="submit" class="btn btn-warning">Rechercher <span
-                                    class="glyphicon glyphicon-search"></span></button>
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
-        </div>
     </div>
 </section>
 
 <section id="categories">
-    <div class="container">
-        <h1>Yakarouler le spécialiste de la vente de pièces auto à prix discount</h1>
-        <p>Pièces auto, accessoires, Yakarouler vous propose depuis bientôt 10 ans plus
-            de 800 000 références parmi les plus grandes
-            marques. N’hésitez plus et trouvez la pièce compatible avec votre auto</p>
-        <div class="row categories">
-            <div class="btn-group" data-toggle="buttons">
-                <label class="btn active">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Tous
-                </label>
-                <label class="btn ">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Voiture
-                </label>
-                <label class="btn ">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> Moto
-                </label>
-            </div>
+    <div class="container text-center">
+        <div class="row">
+            <h1 class="">Yakarouler le spécialiste de la vente de pièces auto<br> à prix discount</h1>
         </div>
-        <div class="container categories-cards">
-            <div class="row">
-                <ul>
-                    <li id="pneu" class="col-md-4"><a href=""></a></li>
-                    <li id="chaines" class="col-md-4"><a href=""></a></li>
-                    <li id="batteries" class="col-md-4"><a href=""></a></li>
-                    <li id="oil" class="col-md-4"><a href=""></a></li>
-                </ul>
-
-            </div>
+        <div class="row">
+            <h3>Pièces auto, accessoires, Yakarouler vous propose depuis bientôt 10 ans plus
+                de 800 000 références parmi les plus grandes
+                marques. N’hésitez plus et trouvez la pièce compatible avec votre auto</h3>
+        </div>
+        <div class="row categories text-center">
+            <ul>
+                <li>Voiture</li>
+                <li>Motos</li>
+            </ul>
         </div>
     </div>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-6 col-md-3 col-sm-6">
+                <a href="" class="thumbnail">
+                    <img src="image/batterie-1.png" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6">
+                <a href="" class="thumbnail">
+                    <img src="image/pneu%20et%20jantes-1.png" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6">
+                <a href="" class="thumbnail">
+                    <img src="image/chaineaneige.png" alt="...">
+                    <div class="desc">Oua</div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6">
+                <a href="" class="thumbnail">
+                    <img src="image/piecedetaché.png" alt="...">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-3 col-sm-6">
+                <a href="" class="thumbnail">
+                    <img src="image/carroserie.png" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6">
+                <a href="" class="thumbnail">
+                    <img src="image/huile.png" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6">
+                <a href="" class="thumbnail">
+                    <img src="image/attelage.png" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6">
+                <a href="" class="thumbnail">
+                    <img src="image/outillage.png" alt="...">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-3 col-sm-6">
+                <a href="" class="thumbnail">
+                    <img src="image/entretien.png" alt="...">
+                </a>
+            </div>
+
+
+        </div>
     </div>
 </section>
 
 
 <section class="brand-carousel">
     <h2>Les grandes marques nous font confiance :</h2>
+    <div class="container">
     <div class="row">
         <div class="col-sm-12">
             <div id="brand-carousel">
-                <div class="item"><img src="image/lizarte.jpg" class="center-block" alt="Logo Title"></div>
-                <div class="item"><img src="image/meca.jpg" class="center-block" alt="Logo Title"></div>
-                <div class="item"><img src="image/bosal.jpg" class="center-block" alt="Logo Title"></div>
-                <div class="item"><img src="image/mga.jpg" class="center-block" alt="Logo Title"></div>
-                <div class="item"><img src="image/sachs.jpg" class="center-block" alt="Logo Title"></div>
-                <div class="item"><img src="image/valeo.jpg" class="center-block" alt="Logo Title"></div>
-                <div class="item"><img src="image/febi.jpg" class="center-block" alt="Logo Title"></div>
-                <div class="item"><img src="image/bendix.jpg" class="center-block" alt="Logo Title"></div>
-                <div class="item"><img src="image/monroe.jpg" class="center-block" alt="Logo Title"></div>
-                <div class="item"><img src="image/valeo.jpg" class="center-block" alt="Logo Title"></div>
-                <div class="item"><img src="image/brembo.jpg" class="center-block" alt="Logo Title"></div>
+
+                <div class="item"><img src="image/free-vector-monroe-logo_090694_Monroe_logo.png" class="center-block" alt="Logo Title"></div>
+                <div class="item"><img src="image/1280px-Bosch-brand.png" class="center-block" alt="Logo Title"></div>
+                <div class="item"><img src="image/1280px-Bosch-brand.png" class="center-block" alt="Logo Title"></div>
+                <div class="item"><img src="image/1280px-Bosch-brand.png" class="center-block" alt="Logo Title"></div>
+                <div class="item"><img src="image/1280px-Bosch-brand.png" class="center-block" alt="Logo Title"></div>
+                <div class="item"><img src="image/1280px-Bosch-brand.png" class="center-block" alt="Logo Title"></div>
+                <div class="item"><img src="image/1280px-Bosch-brand.png" class="center-block" alt="Logo Title"></div>
+                <div class="item"><img src="image/1280px-Bosch-brand.png" class="center-block" alt="Logo Title"></div>
+                <div class="item"><img src="image/1280px-Bosch-brand.png" class="center-block" alt="Logo Title"></div>
+                <div class="item"><img src="image/1280px-Bosch-brand.png" class="center-block" alt="Logo Title"></div>
+
+
             </div>
         </div>
-
+    </div>
+    </div>
+</section>
+<section>
+    <div id="footer">
+        <div class="container">
+            <ul class="col-sm-3 col-xs-12 ">
+                <li><a href="">Aide</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Sécurité et confidentialité</a></li>
+                <li><a href="">Forum Yakarouler</a></li>
+                <li><a href="">Diagnostic panne</a></li>
+                <li><a href="">Connaitre sa côte argus</a></li>
+                <li><a href="">Atelier mécanique gratuit</a></li>
+            </ul>
+            <ul class="col-sm-3 col-xs-12 ">
+                <li><a href="">Yakarouler</a></li>
+                <li><a href="">À propos</a></li>
+                <li><a href="">Nous contacter</a></li>
+                <li><a href="">Magasins</a></li>
+                <li><a href="">Devennez affiliés</a></li>
+                <li><a href="">Devenez centre de montage</a></li>
+                <li><a href="">Recrutement</a></li>
+            </ul>
+            <ul class="col-sm-3 col-xs-12 ">
+                <li><a href="">Réseaux</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Google +</a></li>
+            </ul>
+            <ul class="col-sm-3 col-xs-12 ">
+                <li><a href="">La newsletter Yakarouler</a></li>
+                <li><a href="">Les newsletters sont géniales,et par chance nous en écrivons quelques unes.</a></li>
+                <li><a href="">Elles vous permettront notamment de voir nos offres exclusives et nos nombreux
+                    tutoriels.</a></li>
+                <input type="text" placeholder="EMAIL" class="form-control" id="inputFooter">
+            </ul>
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8 row" id="conditions">
+                <a href="">Mentions légales</a>
+                <a href="">Conditions générales de vente</a>
+                <a href="">Conditions de livraison</a>
+                <a href="">Garantie satisfait ou remboursé</a>
+            </div>
+            <div class="col-xs-2"></div>
+        </div>
     </div>
 </section>
 

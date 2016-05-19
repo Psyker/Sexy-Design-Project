@@ -16,3 +16,67 @@ $(document).ready(function() {
     });
 
 });
+
+
+$(window).on('scroll', function (e) {
+    let scrollPos = $(window).scrollTop();
+    let navbar = $('nav.nav');
+    let limitElem = $('.recherche');
+    let limit = limitElem.offset().top + limitElem.outerHeight();
+    let position = Math.round($(window).scrollTop());
+    if(position < limit - 65)
+    {
+        $('.testeuh').css({
+            'position': 'relative',
+            'left': 0,
+            'top': (scrollPos * 0.55) + "px",
+            "opacity": 1 - (scrollPos * 0.0025)
+        });
+    }
+});
+
+$('.categories ul li').on('hover', function(){
+    var $li = $('.categories ul li');
+    $li.css({
+        'border-top' : "solid 1px #FF6600",
+        'border-bottom' : "solid 1px #FF6600"
+});
+
+});
+
+   $(document).ready(function() {
+       $('.moto').hide();
+       $('.desc').hide();
+
+       $('.categ-moto').on('click', function(){
+            var moto = $('.moto');
+           var voiture = $('.voiture');
+            if($(voiture).is(":visible")){
+                $(voiture).hide();
+                $(moto).show();
+                $('.recherche h1').text('Trouvez toutes vos pièces moto/scooter !')
+            }
+       });
+       $('.categ-car').on('click', function(){
+           var moto = $('.moto');
+           var voiture = $('.voiture');
+           if($(moto).is(":visible")){
+               $(moto).hide();
+               $(voiture).show();
+               $('.recherche h1').text('Toutes les pièces pour voiture en 3 clics !');
+           }
+       });
+
+        $('.thumbnail').on('hover', function(){
+            var picture = $(this).next();
+            picture.find('.desc').show();
+        })
+
+
+   });
+
+
+
+
+
+
