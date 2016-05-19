@@ -51,6 +51,7 @@ nav li > a:hover{
     background-image: url('../../image/pattern.png');
     background-size: cover;
     padding: 190px 0 30px;
+    overflow: hidden;
 
 }
 
